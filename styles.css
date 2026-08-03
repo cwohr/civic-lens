@@ -15,11 +15,7 @@
 }
 
 /* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
-}
+/* deleted, came up as error in W3C */
 
 body {
   /* 4. Increase line-height */
