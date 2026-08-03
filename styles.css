@@ -298,9 +298,41 @@ footer {
   text-align: center;
 }
 
-
 /* ///ADD/// Global Text Styles */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-style: italic;
+}
 
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+#welcome blockquote {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+a {
+  color: inherit;
+}
 
 /* ///ADD/// medium styles 620px */
 
