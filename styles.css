@@ -386,15 +386,56 @@ a {
 }
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px) {
+  #featured-articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  #alerts form {
+    padding: 2rem;
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem 2.5rem;
+  }
 
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
+  .mobile-nav:has(#menu-toggle:checked) .menu {
+    display: block;
+  }
 
+  .mobile-nav:has(#menu-toggle:checked) .menu-button {
+    background-color: var(--blue-bulletin);
+  }
 }
