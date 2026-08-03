@@ -161,6 +161,143 @@ body.dark-mode {
 }
 
 /* ///ADD/// Global Layout Styles */
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  transition: var(--transition);
+}
+
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1.5rem 1rem;
+  position: relative;
+}
+
+main {
+  padding: 1.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+#breaking-news article {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+#breaking-news article h3 {
+  border-bottom: 1px solid var(--watchdog-white);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#breaking-news video {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#featured-articles article {
+  border: 1px solid var(--story-subtitle);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+#featured-articles article h3 {
+  border-bottom: 1px solid var(--story-subtitle);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#alerts form {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+#alerts label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+#alerts input[type="text"],
+#alerts input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+}
+
+#alerts fieldset {
+  border: 1px solid var(--watchdog-white);
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+#alerts legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+
+#alerts fieldset label {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+
+#alerts button {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#social {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1.5rem 1rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
 
 /* ///ADD/// Global Text Styles */
 
